@@ -27,9 +27,9 @@ domain = []
 for email in data['company email'].dropna():    
     if len(email.split('@')) == 1: # Removing invalid email addresses
         continue
-    domain.append(email.split('@')[1])
+    domain.append(email.split('@')[1].lower())
 print('- Number of unique email domains:', len(set(domain)))
-del domain, email
+# del domain, email
 
 print('_______________  Q4-4   ________________\n')
 # Extract each companies separte NTAs
