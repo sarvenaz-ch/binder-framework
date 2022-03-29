@@ -5,10 +5,8 @@ Created on Mon Mar 21 14:47:39 2022
 @author: local_ergo
 """
 import pandas as pd
-import os
 import matplotlib.pyplot as plt
 import numpy as np
-import datetime as dt
 
 ''' LOADING DATA'''
 data = pd.read_csv('Value_of_Energy_Cost_Savings_Program_Savings_for_Businesses_-_FY2020.csv')
